@@ -1,0 +1,18 @@
+# * text # - for win oriented gits and local dirs ( if crlf not converted in any way)
+# * text eol=lf => like core.autocrlf=input
+# * -text => like core.autocrlf=false
+* text=auto
+
+*.html text
+*.js text
+*.css text
+
+*.jpg binary # like -text -merge -diff
+*.gif binary
+
+
+# if file not in project dir -> serch it in
+#  <project>/.git/info/attributes
+#  <project>/a/b/.gitattributes
+#  <project>/a/.gitattributes 
+# and so on ( up to root of the project )
