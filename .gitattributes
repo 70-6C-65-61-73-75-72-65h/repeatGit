@@ -7,8 +7,9 @@
 *.js text
 *.css text
 
-*.jpg binary # like -text -merge -diff
-*.gif binary
+*.jpg binary
+# binary like -text -merge -diff # cant add a comment line in (after) info line
+*.gif -text
 
 
 # if file not in project dir -> serch it in
